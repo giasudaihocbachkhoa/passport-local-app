@@ -19,8 +19,8 @@ Made by Nguyên Đẹp trai
 ## Passportjs
 [Top](#overview)
 
-    Passport một trong những module phổ biến nhất của Nodejs hỗ trợ trong việc xác thực người dùng. Passport có rất nhiều kiểu chứng thực ví dụ như chứng thực qua tài khoản Local, Twitter, Facebook, Google,… Tuy nhiên một điều đáng buồn nhất là vẫn chưa có xác thực tài khoản Porn hub, xvideos,...
-    Phần này giới thiệu về Passport-local (Truy vấn và so sánh trong CSDL). 
+Passport một trong những module phổ biến nhất của Nodejs hỗ trợ trong việc xác thực người dùng. Passport có rất nhiều kiểu chứng thực ví dụ như chứng thực qua tài khoản Local, Twitter, Facebook, Google,… Tuy nhiên một điều đáng buồn nhất là vẫn chưa có xác thực tài khoản Porn hub, xvideos,...
+Phần này giới thiệu về Passport-local (Truy vấn và so sánh trong CSDL). 
 
 ### Các chức năng chính của Passport
 ````
