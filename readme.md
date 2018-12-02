@@ -4,7 +4,7 @@ Made by Nguyên Đẹp trai
 # overview
 1.  [Dependencies](#dependencies)
 2.  [Passportjs](#passportjs)
-3.  [Setup and run](#markdown-header-setup-and-run)
+3.  [Setup and run](#setup-and-run)
 
 ## Dependencies
 [Top](#overview)
@@ -18,7 +18,7 @@ Made by Nguyên Đẹp trai
     - [uuid](https://www.npmjs.com/package/uuid): Tạo ID người dùng
 
 ## Passportjs
-[Top](#markdown-header-overview)
+[Top](#overview)
 
     Passport một trong những module phổ biến nhất của Nodejs hỗ trợ trong việc xác thực người dùng. Passport có rất nhiều kiểu chứng thực ví dụ như chứng thực qua tài khoản Local, Twitter, Facebook, Google,… Tuy nhiên một điều đáng buồn nhất là vẫn chưa có xác thực tài khoản Porn hub, xvideos,...
     Phần này giới thiệu về Passport-local (Truy vấn và so sánh trong CSDL). 
@@ -121,7 +121,7 @@ app.use(session({
 ````
 
 ## Setup and run
-[Top](#markdown-header-overview)
+[Top](#overview)
 ### Bước 1: Vào sửa lại các thông tin trong file config.js
 
 ````
