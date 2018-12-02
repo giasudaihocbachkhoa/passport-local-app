@@ -2,12 +2,12 @@
 Made by Nguyên Đẹp trai
 
 # overview
-1.  [Dependencies](#markdown-header-Dependencies)
-2.  [Passportjs](#markdown-header-passportjs)
+1.  [Dependencies](#dependencies)
+2.  [Passportjs](#passportjs)
 3.  [Setup and run](#markdown-header-setup-and-run)
 
 ## Dependencies
-[Top](#markdown-header-overview)
+[Top](#overview)
 
 ### Một số dependencies quan trọng
 
