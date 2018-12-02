@@ -1,12 +1,12 @@
 # Passport-local DOC
 Made by Nguyên Đẹp trai
 
-#overview
+# overview
 1.  [Dependencies](#markdown-header-Dependencies)
 2.  [Passportjs](#markdown-header-passportjs)
 3.  [Setup and run](#markdown-header-setup-and-run)
 
-##Dependencies
+## Dependencies
 [Top](#markdown-header-overview)
 
 ### Một số dependencies quan trọng
@@ -17,13 +17,13 @@ Made by Nguyên Đẹp trai
     - [joi](https://github.com/hapijs/joi): Kiểm định dữ liệu trước khi query hay insert DB, tuy nhiên chưa sài :v 
     - [uuid](https://www.npmjs.com/package/uuid): Tạo ID người dùng
 
-##Passportjs
+## Passportjs
 [Top](#markdown-header-overview)
 
     Passport một trong những module phổ biến nhất của Nodejs hỗ trợ trong việc xác thực người dùng. Passport có rất nhiều kiểu chứng thực ví dụ như chứng thực qua tài khoản Local, Twitter, Facebook, Google,… Tuy nhiên một điều đáng buồn nhất là vẫn chưa có xác thực tài khoản Porn hub, xvideos,...
     Phần này giới thiệu về Passport-local (Truy vấn và so sánh trong CSDL). 
 
-###Các chức năng chính của Passport
+### Các chức năng chính của Passport
 ````
     .initialize : middleware được gọi ở từng request, kiểm tra session lấy ra passport.user nếu chưa có thì tạo rỗng.
     .passport.session: middleware sử dụng kịch bản Passport , sử dụng session lấy thông tin user rồi gắn vào req.user.
@@ -40,7 +40,7 @@ Với từng yêu cầu của người dùng Passport hỡ trợ thêm 4 hàm
     req.isAuthenticated() : Xác thực người dùng gửi yêu cầu tới có đang đăng nhập hay không, nếu có trả về “true” nếu không là “false”.
     req.isUnauthenticated() : Xác thực người dùng gửi yêu cầu tới có đang đăng nhập hay không. Nếu không trả về “true” nếu có trả về “false”.
 ````
-###Hoạt động của passport với kiểu chứng thực local
+### Hoạt động của passport với kiểu chứng thực local
 
 
 Khi thực hiện gửi thông tin đăng nhập tại đường dẫn, thì hàm Passport.authenticate được thực hiện và được khai báo sử dụng xác thực kiểu “local” – với username và password người dùng đã đăng ký.
@@ -92,7 +92,7 @@ Và để có phương thức xác thực thông tin người dùng gửi đến
 
 Nếu thành công thì hàm Passport.serializeUser() được thực hiện và ghi một giá trị đại diện cho người dùng thực hiện yêu cầu đăng nhập đó vào trong trình duyệt và lưu vào trong cokie.
 
-#####serializeUser and deserialize the user
+##### serializeUser and deserialize the user
     ````
         // used to serialize the user for the session
         passport.serializeUser(function(user, done) {
@@ -110,7 +110,7 @@ Và tại các lần gửi yêu cầu khác, trình duyệt sẽ gửi giá tr�
 
 Như vậy giá trị đại diện cho người dùng phải được lưu trữ ở cả hai nơi server lẫn client (ở đây client được lưu ở cookie cho dễ test :v). Điều này rất bất lợi, không thể thực thi trên các dịch vụ không máy chủ (không thể lưu trữ session). Nên một hướng khác là sử dụng JWT (Json Web Token).
 
-#####Thiết lập express-session để lưu trữ giá trị đại diện cho người dùng
+##### Thiết lập express-session để lưu trữ giá trị đại diện cho người dùng
 
 ````
 app.use(session({
@@ -120,9 +120,9 @@ app.use(session({
 } )); // session secret
 ````
 
-##Setup and run
+## Setup and run
 [Top](#markdown-header-overview)
-###Bước 1: Vào sửa lại các thông tin trong file config.js
+### Bước 1: Vào sửa lại các thông tin trong file config.js
 
 ````
 module.exports = {
@@ -136,14 +136,14 @@ module.exports = {
 };
 ```` 
 
-###Bước 2: Tạo cơ sở dữ liệu
+### Bước 2: Tạo cơ sở dữ liệu
 
     ````
     cd passport-local-app
     cd CreateDB
     node CreateTable.js
     ````
-###Bước 3: Install and run
+### Bước 3: Install and run
 
     ````
     cd ..
