@@ -11,11 +11,11 @@ Made by Nguyên Đẹp trai
 
 ### Một số dependencies quan trọng
 
-    - [bcrypt-nodejs](https://www.npmjs.com/package/bcrypt-nodejs): Hash password
-    - [connect-flash](https://www.npmjs.com/package/connect-flash): Lưu trữ tin nhắn, phục cho Authen
-    - [ejs](https://ejs.co/): Template nhúng JS vào html chạy cho ngầu
-    - [joi](https://github.com/hapijs/joi): Kiểm định dữ liệu trước khi query hay insert DB, tuy nhiên chưa sài :v 
-    - [uuid](https://www.npmjs.com/package/uuid): Tạo ID người dùng
+   [bcrypt-nodejs](https://www.npmjs.com/package/bcrypt-nodejs): Hash password
+   [connect-flash](https://www.npmjs.com/package/connect-flash): Lưu trữ tin nhắn, phục cho Authen
+   [ejs](https://ejs.co/): Template nhúng JS vào html chạy cho ngầu
+   [joi](https://github.com/hapijs/joi): Kiểm định dữ liệu trước khi query hay insert DB, tuy nhiên chưa sài :v 
+   [uuid](https://www.npmjs.com/package/uuid): Tạo ID người dùng
 
 ## Passportjs
 [Top](#overview)
